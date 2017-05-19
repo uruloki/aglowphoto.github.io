@@ -29,6 +29,8 @@
 		var count = 139;
 		var img1 = "<img class='img-portfolio img-responsive' src='img/portfolio_"+(math.floor(math.random() * count)+1)+".jpg'>"
 		
+		localStorage.setItem("Image1",img1);
+		
 		var images = [], 
 		index = 0;
 
@@ -184,7 +186,7 @@
                         <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <script>document.write(img1)</script>
+                                    <script>document.write(localStorage.getItem("Image1"))</script>
                                 </a>
                             </div>
                         </div>
